@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="heading">Ram Kumar Game</h1>
+      <div class="inner-container">
+        <button class="btn" onclick="userMove('paper')">
+          <img src="paper-emoji.png" width="100" height="100" />
+        </button>
+        <button class="btn" onclick="userMove('rock')">
+          <img src="rock-emoji.png" width="100" height="100" />
+        </button>
+        <button class="btn" onclick="userMove('scissors')">
+          <img src="scissors-emoji.png" width="100" height="100" />
+        </button>
+      </div>
+      <div class="result-container">
+        <h3>RESULT</h3>
+        <div class="result-main-container">
+            <div class="user-result"> 
+            </div>
+            <div class="computer-result">
+            </div>
+        </div>
+      </div>
+      <p id="result-display"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

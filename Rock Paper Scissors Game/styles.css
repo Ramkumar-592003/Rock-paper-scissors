@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+.game-container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+}
+.heading{
+    font-family: monospace;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+.inner-container {
+    display: flex; /* Added flex to align buttons in a row */
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+}
+
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: palevioletred;
+}
+
+.result-container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-main-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content:space-around;
+    width: 350px;
+}
+.result-img{
+    width: 80px;
+    height: 80px;
+}
+.user-result,.computer-result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result-display{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 25px;
+    color: red;
+}
